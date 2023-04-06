@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  nodeapp:  
+    image: node
+    container_name: projectnode
+    ports:
+      - 3000:3000
+    build: .
+    command: node index.js
+    depends_on:
+      - db
+  db:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - 27017:27017
