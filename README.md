@@ -1,4 +1,4 @@
-# docker-basic
+# DOCKER BASICS
 Just a simple Docker demostration for devs
 
 
